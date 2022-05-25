@@ -1,4 +1,5 @@
 import React from 'react';
+import Message from './Message';
 import ChatHeader from './ChatHeader';
 import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
 import CardGiftcardRoundedIcon from '@mui/icons-material/CardGiftcardRounded';
@@ -10,7 +11,9 @@ const Chat = () => {
   return (
     <div className='chat'>
       <ChatHeader />
-      <div className='chat__messages'></div>
+      <div className='chat__messages'>
+        <Message />
+      </div>
       <div className='chat__input'>
         <AddCircleRoundedIcon fontSize='large' />
         <form>

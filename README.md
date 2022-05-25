@@ -1,4 +1,4 @@
-# Discord Clone
+# Discord Clone (Desktop)
 
 - React Js
 - Redux
