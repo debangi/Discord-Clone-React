@@ -8,13 +8,13 @@ import HelpRoundedIcon from '@mui/icons-material/HelpRounded';
 
 import './ChatHeader.css';
 
-const ChatHeader = () => {
+const ChatHeader = ({ channelName }) => {
   return (
     <div className='chatHeader'>
       <div className='chatHeader__left'>
         <h3>
           <span className='chatHeader__hash'>#</span>
-          Test channel name
+          {channelName}
         </h3>
       </div>
 

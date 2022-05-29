@@ -2,16 +2,20 @@ import { Avatar } from '@mui/material';
 import React from 'react';
 import './Message.css';
 
-const Message = () => {
+const Message = ({ message, user, timestamp }) => {
   return (
     <div className='message'>
-      <Avatar src='https://avatars.githubusercontent.com/u/67732957?v=4' />
+      <Avatar src={user.photo} />
       <div className='message__info'>
         <h4>
-          Debangi
-          <span className='span message__timestamp'>this is timestamp</span>
+          {user.displayName}
+          <span className='span message__timestamp'>
+            {(new Date(timestamp?.toDate()).getUTCHours() + 5) % 24}:
+            {(new Date(timestamp?.toDate()).getUTCMinutes() + 30) % 60}:
+            {new Date(timestamp?.toDate()).getUTCSeconds()}
+          </span>
         </h4>
-        <p>This is message</p>
+        <p>{message}</p>
       </div>
     </div>
   );
