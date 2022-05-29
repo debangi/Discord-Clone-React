@@ -6,4 +6,4 @@
 - Firebase Firestore
 - Firebase Hosting
 
-[Live Link](https://discord-clone-60908.web.app/)
+[Live Link](https://discord-clone-60908.firebaseapp.com/)
